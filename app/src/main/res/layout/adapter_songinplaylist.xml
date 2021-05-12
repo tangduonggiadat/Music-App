@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:id="@+id/cvSongInPlaylist">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7131428"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/txtSongName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Name"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/txtSongPerformer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No performer"
+            android:layout_below="@id/txtSongName"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

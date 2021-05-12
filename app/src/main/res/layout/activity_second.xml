@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="8dp"
+        android:paddingTop="12dp">
+
+        <Button
+            android:id="@+id/btnFirstSong"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="Song 1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSecondSong"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_toRightOf="@id/btnFirstSong"
+            android:background="@android:color/holo_blue_light"
+            android:text="Song 2"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnThirdSong"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnSecondSong"
+            android:background="@android:color/holo_blue_light"
+            android:text="Song 3"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnFourthSong"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/btnThirdSong"
+            android:background="@android:color/holo_blue_light"
+            android:text="Song 4"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTenNhac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnFirstSong"
+            android:layout_marginTop="8dp"
+            android:text="Tên Nhạc: "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTenNgheSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTenNhac"
+            android:layout_marginTop="8dp"
+            android:text="Tên Nghệ Sĩ: "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTheLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTenNgheSi"
+            android:layout_marginTop="8dp"
+            android:text="Thể Loại: "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtThoiLuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTheLoai"
+            android:layout_marginTop="8dp"
+            android:text="Thời Lượng: "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtThoiLuong"
+            android:layout_marginTop="8dp"
+            android:text="URL: "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtURL"
+            android:layout_marginTop="12dp" />
+
+        <ImageView
+            android:id="@+id/btnPlayAndPause2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/seekBar2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/holo_blue_light"
+            android:src="@drawable/ic_play_arrow" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnPlayAndPause2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/btnNext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtReceivedUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivProfilePicture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="No Text"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtReceivedUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtReceivedUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="No Text"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtReceivedUserEmail"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/holo_blue_light"
+            app:menu="@menu/bottom_nav_menu" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/DarkTheme"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="100dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:paddingTop="30dp">
+
+                <ImageView
+                    android:id="@+id/ivCollapse"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_keyboard_arrow_down" />
+
+                <ImageView
+                    android:id="@+id/ivExpand"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_keyboard_arrow_up" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nsvPlaylist"
+                    android:layout_below="@id/ivExpand"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvPlaylist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ivExpand" />
+
+                </androidx.core.widget.NestedScrollView>
+                <SeekBar
+                    android:id="@+id/seekBar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progressBackgroundTint="@android:color/white"
+                    android:layout_below="@id/nsvPlaylist" />
+
+                <TextView
+                    android:id="@+id/txtCurrentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seekBar3"
+                    android:layout_alignParentLeft="true"
+                    android:text="0:00"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtEndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seekBar3"
+                    android:layout_alignParentRight="true"
+                    android:text="0:00"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ivSkipToPrevious"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/seekBar3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toLeftOf="@id/ivPlayAndPause"
+                    android:src="@drawable/ic_skip_previous" />
+
+                <ImageView
+                    android:id="@+id/ivPlayAndPause"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/seekBar3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/ic_play_arrow" />
+
+                <ImageView
+                    android:id="@+id/ivSkipToNext"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/seekBar3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@id/ivPlayAndPause"
+                    android:src="@drawable/ic_skip_next" />
+
+                <ImageView
+                    android:id="@+id/ivShuffle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/ivPlayAndPause"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toStartOf="@id/ivSkipToNext"
+                    android:src="@drawable/ic_shuffle" />
+
+                <ImageView
+                    android:id="@+id/ivLooping"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/ivPlayAndPause"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@id/ivSkipToPrevious"
+                    android:src="@drawable/ic_repeat" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

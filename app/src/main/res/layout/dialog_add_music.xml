@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="8dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/txtAddSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Thêm Nhạc"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/txtAddSongPerformer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Nghệ Sĩ"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/txtAddSongName"/>
+    <EditText
+        android:id="@+id/txtAddSongCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thể Loại"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/txtAddSongPerformer"/>
+    <EditText
+        android:id="@+id/txtAddSongName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Nhạc"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/txtAddSong"/>
+    <TextView
+        android:id="@+id/txtConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác Nhận"
+        android:textSize="22sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtAddSongCategory"/>
+</RelativeLayout>
